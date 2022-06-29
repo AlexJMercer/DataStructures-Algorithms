@@ -31,7 +31,6 @@ public class _1_TwoSum {
         System.out.print("Enter target to find : ");
         int target = input.nextInt();
         twoSum(nums, target);
-        // System.out.println(solution(nums, target));   // Printing Return
         input.close();
     }
 }
