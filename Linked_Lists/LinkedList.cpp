@@ -4,7 +4,7 @@ struct Node
 {
     int data;
     Node *next;
-} *start, *newptr, *curr, *ptr;
+} *start, *newptr, *save, *ptr, *rear;
 
 Node *new_node(int n)
 {
@@ -20,9 +20,32 @@ void insert_beg(Node *p)
         start = p;
     else
     {
-        curr = start;
+        save = start;
         start = p;
-        p->next = curr;
+        p->next = save;
+    }
+}
+
+void insert_end(Node *p)
+{
+    if (start == NULL)
+        start = rear = p;
+    else
+    {
+        rear->next = p;
+        rear = p;
+    }
+}
+
+void *delete_head()
+{
+    if (start == NULL)
+        std::cout << "Underflow\n";
+    else
+    {
+        ptr = start;
+        start = start->next;
+        delete ptr;
     }
 }
 
