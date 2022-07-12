@@ -4,7 +4,7 @@ struct Node
 {
     int data;
     Node *next;
-} *start, *newptr, *save, *ptr, *rear;
+} *head, *newptr, *save, *ptr, *rear;
 
 Node *new_node(int n)
 {
@@ -16,20 +16,20 @@ Node *new_node(int n)
 
 void insert_beg(Node *p)
 {
-    if (start == NULL)
-        start = p;
+    if (head == NULL)
+        head = p;
     else
     {
-        save = start;
-        start = p;
+        save = head;
+        head = p;
         p->next = save;
     }
 }
 
 void insert_end(Node *p)
 {
-    if (start == NULL)
-        start = rear = p;
+    if (head == NULL)
+        head = rear = p;
     else
     {
         rear->next = p;
@@ -37,15 +37,37 @@ void insert_end(Node *p)
     }
 }
 
-void *delete_head()
+void delete_head()
 {
-    if (start == NULL)
+    if (head == NULL)
         std::cout << "Underflow\n";
     else
     {
-        ptr = start;
-        start = start->next;
+        ptr = head;
+        head = head->next;
         delete ptr;
+    }
+}
+
+void delete_pos(Node *head, int pos)
+{
+    Node *temp = head;
+    if (head == NULL)
+    {
+        std::cout << "Underflow";
+        return;
+    }
+    if (pos == 1)
+    {
+        head = temp->next;
+        free(temp);
+        return;
+    }
+    for (int i = 2; temp != NULL && i < (pos-1); i++) {
+        temp = temp->next;
+    }
+    if (temp == NULL || temp->next == NULL) {
+        return;
     }
 }
 
