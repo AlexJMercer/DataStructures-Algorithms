@@ -1,12 +1,12 @@
 package LeetCode_Practice.Java_Solutions.LinkedLists;
 
 class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+}
 
 public class _19_Remove_nth_NodeFromEnd {
     public ListNode removeNthFromEnd(ListNode head, int n) {
