@@ -1,3 +1,5 @@
+package Java_Programs.Dynamic_Arrays;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
