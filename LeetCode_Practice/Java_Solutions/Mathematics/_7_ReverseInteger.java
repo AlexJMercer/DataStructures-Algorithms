@@ -1,4 +1,4 @@
-
+package LeetCode_Practice.Java_Solutions.Mathematics;
 
 class _7_ReverseInteger {
     public int reverse(int x) {
