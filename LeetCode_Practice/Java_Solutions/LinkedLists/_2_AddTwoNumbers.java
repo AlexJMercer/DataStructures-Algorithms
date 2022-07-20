@@ -28,6 +28,6 @@ public class _2_AddTwoNumbers {
             carry /= 10;
             res = res.next;
         }
-        return head;
+        return head.next;
     }
 }
