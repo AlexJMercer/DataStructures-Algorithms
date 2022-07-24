@@ -1,8 +1,10 @@
 # Data Structures & Algorithms
 
-## 📓 Note : This repo is ACTIVE✔ and is being updated regularly ! 🎊
+> ## 📓 Note : This repo is ACTIVE✔ and is being updated regularly ! 🎊
 
-### 🤔 About this repo :
+___
+
+## 🤔 About this repo :
 > This repository was created to tackle common and well-known problems in 
 Data Structures & Algorithms.
 >
@@ -16,28 +18,43 @@ Data Structures & Algorithms.
 >
 > You're welcome to contribute to this repo so that it may help many others just like me, learning Data Structures & Algorithms for the first time.
 
+&nbsp;
 ___
 
-### 🔥 What this repo offers :
+## 🤷🏻‍♂️ How to use this Repository :
+> There are different folders for each language, containing :
+> - Learning Material
+> - Code Snippets
+> - Short Notes
 
-> ✅ Learning Materials for DSA on all topics !
+> An additional folder named **LeetCode_Practice**, containing solutions for important LeetCode problems.
+
+> **LeetCode_Practice** contains subfolders for each language, and further sub-folders for each topic in DSA.
+
+> The solution-files are always named according to the following syntax :
+>
+> ``_<Question Number>_<Question Title>.<Language Extension>``
+
+&nbsp;
+___
+
+## 🔥 What this Repo offers :
+
+> ✅ Learning Materials for DSA on all topics ! Along with short notes !
 >
 > ✅ Common DSA introductory problems with common useful functions included in respective material !
 > 
-> ✅ **LeetCode** solutions in Java. (C++ to be added eventually.)
->
+> ✅ **LeetCode** solutions in Java. (C++ & Python to be added eventually.)
 
+&nbsp;
 ___
 
-
-### 🌐 Contributing :
+## 🌐 Contributing :
 > Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 >
 > Alternatively, you may also DM me on [Instagram](https://www.instagram.com/alexjmercer24k/).
 
 ___
-
-### ⚖ License :
+## ⚖ License :
 [MIT](https://choosealicense.com/licenses/mit/)
-
 ___
