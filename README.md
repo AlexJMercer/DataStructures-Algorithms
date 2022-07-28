@@ -27,9 +27,11 @@ ___
 > - Code Snippets
 > - Short Notes
 
+> Notes are contained in the folder named **Topic_Notes**.
+
 > An additional folder named **LeetCode_Practice**, containing solutions for important LeetCode problems.
 
-> **LeetCode_Practice** contains subfolders for each language, and further sub-folders for each topic in DSA.
+> **LeetCode_Practice** contains sub-folders for each language, and further sub-folders for each topic in DSA.
 
 > The solution-files are always named according to the following syntax :
 >
