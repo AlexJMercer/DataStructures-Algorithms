@@ -44,8 +44,45 @@
 >
 > - New element is pushed at the position ``top``.
 >
+>> ``++top;``\
+>> ``stack_arr[top] = data;``
+>
 > #### **Pop Function :**
 >
 > - Element at position of ``top`` is deleted.
 >
 > - ``top`` is decremented by 1.
+>
+>> ``stack_arr[top];``\
+>> ``top--;``
+>
+
+&nbsp;
+### **Linked List Implementation :**
+> - Linked List implementations are preferred when the size of the stack is unknown.
+> - Hence, there's no limitation on number of nodes.
+> - Head of the Linked List is always the ``top`` element.
+> - Time Complexity for _Push_ & _Pop_ operations with linked list is ``O(1)``.
+
+> Stack Underflow occurs when the ``top`` element is NULL.
+>
+> #### **Push Function :**
+> - A new Node is created using given data.
+> - The new Node is made ``top`` while the old Node is copied to a different pointer ``temp``.
+> - New Node is made ``top``.
+> - Address of ``node -> next`` is made to be ``temp``.
+>
+>> ``temp = top;``\
+>> ``top = node;``\
+>> ``node->next = temp;``
+> 
+> #### **Pop Function :**
+> - A ``temp`` pointer holds value of the ``top`` node, which is going to be deleted.
+> - Increment the ``top`` pointer once,
+so that now the next pointer becomes ``top``.
+> - Delete ``temp`` from memory.
+>
+>> ``temp = top;``\
+>> ``top = top->next;``\
+>> ``delete temp;``
+>
