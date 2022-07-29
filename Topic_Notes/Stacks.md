@@ -5,6 +5,8 @@
 
 > As a stack is a linear data structure, we can implement it using an **array** or  **linked list**.
 
+> The order may be **LIFO** (Last In First Out) or **FILO** (First In Last Out).
+
 &nbsp;
 #### **Stack as an ADT :**
 > When we define a stack as an _ADT_ (Abstract Data Type), then we are only interested in knowing the stack operations from the user point of view.
