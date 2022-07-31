@@ -14,8 +14,15 @@
 >
 > Number of elements in a queue at any given time can be calculated using :
 >> ``front - rear + 1``
+> #### **Insertion :**
+> Queue is stored in memory using a Array with **N**  elements.
+> 
+> With every insertion, the value of ``rear`` is incremented by 1.
 >
+> So, after **N** insertions, the ``rear`` element occupies index [N-1].
+>
+> 
 
 &nbsp;
-### **Queue using Array :**
+### **Queue using Linked Lists :**
 > 
