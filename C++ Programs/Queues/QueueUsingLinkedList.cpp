@@ -1,65 +1,71 @@
 #include <iostream>
-#define MAX 5
 
-int queue[MAX], front = -1, rear = -1;
+struct Node
+{
+    int data;
+    Node *next;
+}*front, *rear, *temp, *ptr;
+
+Node *new_Node(int data)
+{
+    ptr = new Node;
+    ptr->data = data;
+    ptr->next = nullptr;
+    return ptr;
+}
 
 bool isEmpty()
 {
-    return rear == -1;
+    return front == nullptr;
 }
 
-bool isFull()
+void enqueue(int data)
 {
-    return rear == (MAX - 1);
-} 
-
-void insert(int data)
-{
-    if (isFull())
-        std::cout << "Stack is Full !" << std::endl;
-    else if (isEmpty())
-    {
-        std::cout << "Stack is Empty !" << std::endl;
-        front = rear = 0;
-        queue[rear] = data;
-    }
-    else
-    {
-        rear++;
-        queue[rear] = data;
-    }
-}
-
-int remove()
-{
-    int temp;
+    temp = new_Node(data);
     if (isEmpty())
-        std::cout << "Queue is Empty !" << std::endl;
-    else if (front == rear)
     {
-        temp = queue[front];
-        front = rear = -1;
+        front = rear = temp;
+        return;
     }
-    else
+    rear->next = temp;
+    rear = temp;
+}
+
+void dequeue()
+{
+    if (isEmpty())
     {
-        temp = queue[front];
-        front++;
+        std::cout << "Queue is Empty !";
+        return;
     }
-    return temp;
+
+    temp = front;
+    front = front->next;
+
+    if (front == nullptr)
+        front = rear = nullptr;
+    
+    delete(temp);
 }
 
 void disp()
 {
     if (isEmpty())
+        std::cout << "Queue is Empty !!";
+    else
     {
-        std::cout << "\nQueue is empty !" << std::endl;
-        return;
+        temp = front;
+        std::cout << "\nQueue from front to rear is..." << std::endl;
+        while (temp != nullptr)
+        {
+            if (temp->next != nullptr)
+                std::cout << temp->data << ", ";
+            else
+                std::cout << temp->data;
+            temp = temp->next;
+        }
     }
-    std::cout << "\nQueue from front to rear is..." << std::endl;
-    for (int i = front; i <= rear; i++)
-    {
-        std::cout << queue[i] << ", ";
-    }
+    std::cout << std::endl;
 }
 
 int main()
@@ -81,12 +87,12 @@ int main()
         case 1:
             std::cout << "\nEnter data to be entered : ";
             std::cin >> data;
-            insert(data);
+            enqueue(data);
             break;
         
         case 2:
             std::cout << "\nDeleting first element in Queue...\n";
-            std::cout << remove();
+            dequeue();
             break;
         
         case 3:
