@@ -21,7 +21,18 @@
 >
 > So, after **N** insertions, the ``rear`` element occupies index [N-1].
 >
-> 
+>> ``rear++;``\
+>> ``queue[rear] = data;``
+>
+> #### **Deletion :**
+> In case of when the ``front`` and ``rear`` indexes are the same, it means that the array is **Empty**.\
+In which case, ``front`` and ``rear`` are both assigned -1.
+>> ``front = rear = -1;``
+>
+> Under normal circumstances, the front index is just incremented by 1, and the ``front`` element, which is held by a ``temp`` variable, is returned.
+>> ``temp = queue[front];``\
+>> ``front++;``
+>
 
 &nbsp;
 ### **Queue using Linked Lists :**
