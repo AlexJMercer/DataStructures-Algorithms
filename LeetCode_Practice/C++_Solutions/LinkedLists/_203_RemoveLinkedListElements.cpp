@@ -14,11 +14,11 @@ class Solution {
         ListNode *removeElements(ListNode *head, int val)
         {
             ListNode *cur = head;
-            if (head == NULL)
-                return NULL;
-            while (head != NULL && head->val == val)
+            if (head == nullptr)
+                return nullptr;
+            while (head != nullptr && head->val == val)
                 head = head->next;
-            while (cur != NULL && cur->next != NULL)
+            while (cur != nullptr && cur->next != nullptr)
             {
                 if (cur->next->val == val)
                     cur->next = cur->next->next;
