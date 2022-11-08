@@ -20,9 +20,9 @@ void bubble_sort (vector<int> list)
     for (int i = 0; i < list.size(); i++)
     {
         if (i < (list.size() - 1))
-        cout << list[i] << ", ";
+            cout << list[i] << ", ";
         else
-        cout << list[i];
+            cout << list[i];
     }
     
 }

@@ -4,25 +4,24 @@ using namespace std;
 
 void insertion_sort(vector<int> list)
 {
-    int i = 1, m;
-    for (int j = 1; j < list.size(); j++)
+    for (int i = 1; i < list.size(); i++)
     {
-        i = 0;
-        while (list[j] > list[i])
-            i++;
-        m = list[j];
-        for (int k = 0; k < (j - i); k++)
-            list[j-k] = list[j-k-1];
-        
-        list[i] = m;
+        int index = list[i];
+        int j = i;
+        while (j > 0 && list[j-1] > index)
+        {
+            list[j] = list[j-1];
+            j--;
+        }
+        list[j] = index;
     }
     
     for (int i = 0; i < list.size(); i++)
     {
         if (i < (list.size() - 1))
-        cout << list[i] << ", ";
+            cout << list[i] << ", ";
         else
-        cout << list[i];
+            cout << list[i];
     }
 }
 
