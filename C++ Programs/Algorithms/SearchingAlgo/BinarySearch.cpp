@@ -35,7 +35,7 @@ int main()
     cin >> ele;
     pos = binary_search(list, ele);
     if (pos >= 0)
-        cout << "Element found at position " << pos;
+        cout << "Element " << pos << " found !";
     else
         cout << "Element does not exist in the list.";
     
