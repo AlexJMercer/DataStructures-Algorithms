@@ -1,1 +1,5 @@
-.sql linguist-detectable=true
+# Show SQL files as SQL
+*.sql linguist-detectable=true
+
+# Prevent showing SQL Files as T-SQL
+*.sql linguist-language=sql
