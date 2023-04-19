@@ -5,9 +5,9 @@ using namespace std;
 void bubble_sort (vector<int> list)
 {
     int temp;
-    for (int i = 1; i < list.size() - 1; i++)
+    for (int i = 1; i < list.size(); i++)
     {
-        for (int j = 0; j < list.size() - i; j++)
+        for (int j = 0; j < list.size() - 1; j++)
         {
             if (list[j] > list[j+1])
             {
