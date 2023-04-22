@@ -54,37 +54,85 @@ and terminate at the last coach where a big ‘X’ marks the end at the back (T
 > Examples can be found in the folder C Programs/ C++ Programs/ Java Programs about different ways to initialize/handle and work with Linked Lists.
 
 &nbsp;
-### **Types of Linked Lists :**
+## **Types of Linked Lists :**
+<hr>
 
-1. ### **Singly Linked Lists :**
->  
+### **1. Singly Linked Lists :**
+> 
+> **Singly Linked Lists** are the simplest form of Linked Lists. 
+> 
+> They are made up of nodes, each node containing data and a reference to the next node in the list.
+> 
+> The last node in the list has a reference to NULL.
+> 
+> ![singlylinkedlist](https://media.geeksforgeeks.org/wp-content/uploads/20220816144425/LLdrawio.png)
+> 
+> **Advantages :**
+> - Insertion and Deletion are easy.
+> - Dynamic in size.
+> - No need to specify the size of the list.
+> - No need to shift the elements when inserting or deleting.
+> 
+> **Disadvantages :**
+> - Takes up more space as each node contains a reference to the next node.
+> - Cannot be traversed in reverse.
+> - Cannot be accessed randomly.
+> - No cache locality.
 
-2. ### **Doubly Linked Lists :**
-> 
+&nbsp;
 
-3. ### **Circular Linked Lists :**
+### **2. Doubly Linked Lists :**
 > 
-> - ### **Singly Circular Linked Lists :**
+> **Doubly Linked Lists** are a variation of Singly Linked Lists.
 > 
-> - ### **Doubly Circular Linked Lists :**
+> They are made up of nodes, each node containing data and a reference to the next node in the list, as well as the previous node in the list.
 > 
+> The last node in the list has a reference to NULL.
+> 
+> ![doublylinkedlist](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png)
+>
+> 
+> **Advantages :**
+> - Insertion and Deletion are easy.
+> - Dynamic in size.
+> - No need to specify the size of the list.
+> - No need to shift the elements when inserting or deleting.
+> - Can be traversed in both directions.
+> 
+> **Disadvantages :**
+> - Takes up more space as each node contains a reference to the next node and the previous node.
+> - Cannot be accessed randomly.
+> - No cache locality.
 
 
 &nbsp;
-### **Advantages of Arrays :**
-> - It is a better version of storing the data of the same size and same type.
->
-> - It enables us to collect the number of elements in it.
->
-> - Arrays have a safer cache positioning that improves performance.
->
-> - When it comes to insertion and deletion, it is a bit difficult because the elements are stored sequentially and the shifting operation is expensive.
-
-&nbsp;
-### **Disadvantages of Arrays :**
-> - In an array, it is essential to identify the number of elements to be stored.
->
-> - It is a static structure. It means that in an array, the memory size is fixed.
->
-> - When it comes to insertion and deletion, it is a bit difficult because the elements are stored sequentially and the shifting operation is expensive.
-
+## **Time Complexities of Linked Lists:**
+> - **Insertion :** 
+>     - **At the beginning :** 
+>         - **Time Complexity :** O(1)
+>         - **Space Complexity :** O(1)
+>     - **At the end :**
+>         - **Time Complexity :** O(n)
+>         - **Space Complexity :** O(1)
+>     - **At a given position :**
+>         - **Time Complexity :** O(n)
+>         - **Space Complexity :** O(1)
+> 
+> - **Deletion :**
+>     - **At the beginning :**
+>         - **Time Complexity :** O(1)
+>         - **Space Complexity :** O(1)
+>     - **At the end :**
+>         - **Time Complexity :** O(n)
+>         - **Space Complexity :** O(1)
+>     - **At a given position :**
+>         - **Time Complexity :** O(n)
+>         - **Space Complexity :** O(1)
+> 
+> - **Searching :**
+>     - **Linear Search :**
+>         - **Time Complexity :** O(n)
+>         - **Space Complexity :** O(1)
+>     - **Binary Search :**
+>         - **Time Complexity :** O(log n)
+>         - **Space Complexity :** O(1)
