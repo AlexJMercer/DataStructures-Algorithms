@@ -1,8 +1,10 @@
 # Show SQL files as SQL
 *.sql linguist-detectable=true
 
-*.md linguist-documentation=false
-*.md linguist-detectable
-
 # Prevent showing SQL Files as T-SQL
 *.sql linguist-language=sql
+
+*.md linguist-vendored=false
+*.md linguist-generated=false
+*.md linguist-documentation=false
+*.md linguist-detectable=true
